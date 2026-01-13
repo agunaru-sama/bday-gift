@@ -24,5 +24,5 @@ heartInput.addEventListener("change", () => {
 });
 
 nextBtn.onclick = () => {
-  window.location.href = "../envelope/index.html"; // sesuaikan path
+  window.location.href = "envelope/index.html"; // sesuaikan path
 };
