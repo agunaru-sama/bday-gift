@@ -1,3 +1,5 @@
+const isMobile = 'ontouchstart' in window;
+
 let highestZ = 1;
 
 class Paper {

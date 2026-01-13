@@ -4,16 +4,15 @@
 }
 
 html, body {
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  cursor: none;
+  overflow: hidden;
 }
 
 body {
-  overflow: hidden;
-  
+  touch-action: none;
 }
+
 
 input {
   display: none;
@@ -165,6 +164,9 @@ input[type="radio"]:checked + label, label.lang:hover {
 }
 
 .next-btn {
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 16px;
   position: fixed;
   bottom: 40px;
   left: 50%;

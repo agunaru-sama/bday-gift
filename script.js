@@ -1,3 +1,14 @@
+function centerElement(el, offsetX = 0, offsetY = 0) {
+  const x = (window.innerWidth - el.offsetWidth) / 2 + offsetX;
+  const y = (window.innerHeight - el.offsetHeight) / 2 + offsetY;
+
+  el.style.transform = `translate(${x}px, ${y}px) rotate(${Math.random()*10-5}deg)`;
+}
+
+window.addEventListener("orientationchange", () => {
+  location.reload();
+});
+
 var heart= document.getElementById('heart'),
     heartW = heart.offsetWidth,
     heartH = heart.offsetHeight;

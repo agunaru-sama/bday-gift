@@ -1,3 +1,18 @@
+function centerElement(el, offsetX = 0, offsetY = 0) {
+  const x = (window.innerWidth - el.offsetWidth) / 2 + offsetX;
+  const y = (window.innerHeight - el.offsetHeight) / 2 + offsetY;
+
+  el.style.transform = `translate(${x}px, ${y}px) rotate(${Math.random()*10-5}deg)`;
+}
+
+document.querySelectorAll(".paper").forEach((paper, i) => {
+  centerElement(paper, (i - 2) * 20, i * 30);
+});
+
+window.addEventListener("orientationchange", () => {
+  location.reload();
+});
+
 let highestZ = 1;
 
 class Paper {
